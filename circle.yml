@@ -4,3 +4,7 @@ machine:
 dependencies:
   override:
     - npm install --dev
+test:
+  post:
+    - npm run test
+    - npm run cover
